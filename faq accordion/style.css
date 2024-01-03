@@ -60,7 +60,10 @@ body{
     font-weight: 400;
     opacity: 0.7;
     line-height: 1.7;
-  
+    
+    height: 100px;
+    visibility: visible;
+    transition: height 300ms ease-in;
    
 }
 .header{
@@ -69,10 +72,13 @@ body{
     color: var(--DarkPurple);
 }
 .hidden{
-    display: none;
+    height: 0px;
+    visibility: hidden;
+    transition: height 300ms ease-in;
 }
 button{
     border: transparent;
+    background-color: transparent;
 }
 button:hover{
     cursor: pointer;
